@@ -31,7 +31,7 @@ const UpdateEvent = () => {
         const decodedToken = decodeToken(token); 
         setUserInfo({
           name: decodedToken.name, 
-          email: decodedToken.email, // Assuming your JWT contains 'email'
+          email: decodedToken.email, 
         });
       } catch (err) {
         console.error("Error decoding token", err);
