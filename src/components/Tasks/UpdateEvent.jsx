@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
@@ -27,7 +28,8 @@ const UpdateEvent = () => {
   useEffect(() => {
     if (token) {
       try {
-        const decodedToken = decodeToken(token); 
+        const decodedToken = decodeToken(token); // Decode the token manually
+        setUserInfo({
           name: decodedToken.name, // Assuming your JWT contains 'name'
           email: decodedToken.email, // Assuming your JWT contains 'email'
         });
