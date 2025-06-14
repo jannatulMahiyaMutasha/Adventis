@@ -189,7 +189,7 @@ const UpdateEvent = () => {
             </label>
             <input
               type="text"
-              value={userInfo.name} // Using the name from token
+              value={userInfo.name} 
               readOnly
               className="w-full px-4 py-2 border bg-gray-100 rounded-md"
             />
