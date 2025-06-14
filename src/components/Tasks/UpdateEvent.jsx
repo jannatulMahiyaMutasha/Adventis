@@ -28,7 +28,7 @@ const UpdateEvent = () => {
   useEffect(() => {
     if (token) {
       try {
-        const decodedToken = decodeToken(token); // Decode the token manually
+        const decodedToken = decodeToken(token); 
         setUserInfo({
           name: decodedToken.name, // Assuming your JWT contains 'name'
           email: decodedToken.email, // Assuming your JWT contains 'email'
