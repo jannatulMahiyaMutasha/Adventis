@@ -42,8 +42,8 @@ const ServiceCards = () => {
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1"
             >
               <div className="p-6 flex flex-col h-full justify-between">
-                <div>
-                  <img src={task.picture}></img>
+                <div className="">
+                  <img className="h-64 w-full" src={task.picture}></img>
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">

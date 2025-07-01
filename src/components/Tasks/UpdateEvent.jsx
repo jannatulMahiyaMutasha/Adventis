@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
@@ -28,10 +27,10 @@ const UpdateEvent = () => {
   useEffect(() => {
     if (token) {
       try {
-        const decodedToken = decodeToken(token); 
+        const decodedToken = decodeToken(token); // Decode the token manually
         setUserInfo({
-          name: decodedToken.name, 
-          email: decodedToken.email, 
+          name: decodedToken.name, // Assuming your JWT contains 'name'
+          email: decodedToken.email, // Assuming your JWT contains 'email'
         });
       } catch (err) {
         console.error("Error decoding token", err);
@@ -42,8 +41,8 @@ const UpdateEvent = () => {
 
   // Function to manually decode JWT token
   const decodeToken = (token) => {
-    const base64Url = token.split(".")[1]; 
-    const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/"); 
+    const base64Url = token.split(".")[1]; // Get the payload part
+    const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/"); // Fix URL encoding
     const jsonPayload = decodeURIComponent(
       atob(base64)
         .split("")
@@ -189,7 +188,7 @@ const UpdateEvent = () => {
             </label>
             <input
               type="text"
-              value={userInfo.name} 
+              value={userInfo.name} // Using the name from token
               readOnly
               className="w-full px-4 py-2 border bg-gray-100 rounded-md"
             />

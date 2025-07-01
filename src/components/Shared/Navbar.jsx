@@ -56,7 +56,7 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-[#313f2a] text-white px-4 py-4 shadow-md">
+    <nav className="sticky top-0 z-50 bg-[#313f2a] text-white px-4 py-4 shadow-md">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link to="/" className="text-xl font-bold">
           <img
