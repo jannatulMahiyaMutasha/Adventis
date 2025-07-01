@@ -1,4 +1,4 @@
-🏆 Adventis – Sports Event Management Platform
+🏆 Adventis – Sports Event Management 
 
 
 Adventis is a powerful web-based platform for organizing and managing sports events. Whether you're an organizer looking to create an event or a participant eager to explore and book upcoming tournaments, Adventis makes the experience seamless, interactive, and efficient.
