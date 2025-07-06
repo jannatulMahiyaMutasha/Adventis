@@ -15,5 +15,5 @@ Adventis is a powerful web-based platform for organizing and managing sports eve
 
 🔒 Authentication & Authorization – Login/ Registration using email, google.
 
-🌐 Live Demo
+🌐 Live 
 👉 [https://adventis-12dea.web.app/]
