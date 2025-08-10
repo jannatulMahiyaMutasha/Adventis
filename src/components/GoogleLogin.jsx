@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export default function GoogleLogin() {
   const navigate = useNavigate();
 
-  // Handle Google Login
+  // Handle Google Login code
   const handleGoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
