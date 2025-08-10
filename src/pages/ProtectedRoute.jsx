@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 
 const ProtectedRoute = ({ children, user, token }) => {
   if (!user || !token) {
-    // Redirect to login if no token or user
+    // Redirect to login if no user or token
     return <Navigate to="/login" />;
   }
 
