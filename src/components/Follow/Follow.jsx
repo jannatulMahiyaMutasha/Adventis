@@ -9,7 +9,7 @@ const Follow = () => {
           "url('https://tennis-sportclub.axiomthemes.com/wp-content/uploads/2023/03/image-26-copyright.jpg')",
       }}
     >
-      {/* Overlay for better text contrast */}
+      {/* Overlay for better contrast text */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       {/* Content container */}
